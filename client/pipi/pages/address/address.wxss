@@ -1,0 +1,119 @@
+page {
+  background: #f2f2f2;
+}
+.addressList {
+  padding: 20rpx 40rpx;
+  margin-top: 20rpx;
+  background: white;
+}
+.icon-more {
+  padding: 40rpx;
+}
+.addressList:first-child {
+  margin-top: 0;
+}
+.listLeft {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.name {  
+  width: 100%;
+  line-height: 60rpx;
+  border-bottom: 2rpx #f2f2f2 solid;
+}
+.quan {
+  display: inline-block;
+  width: 32rpx;
+  height:32rpx;
+  border: 2rpx #ddd solid;
+  position: relative;
+  top: 8rpx;
+  border-radius: 50%;
+}
+.Edit .icon-true:before {
+  font-size: 40rpx; 
+  position: relative;
+  color: #ffe400;
+  top: -4rpx;
+  left: -4rpx;
+}
+.addAddress {
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 12rpx;
+  margin-top: 80rpx;
+  background: #ffe400;
+  text-align: center;
+  padding: 30rpx 0;
+}
+.add {
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  color: #999;
+  margin-bottom: 30rpx;
+  border: 2rpx #ddd solid;
+  border-radius: 8rpx;
+  font-size: 80rpx;
+}
+.del {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 40rpx 0;
+}
+.null {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: white;
+}
+.null .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 30% auto 0;
+}
+.null image {
+  width: 240rpx;
+  height: 190rpx;  
+}
+.nothing {
+  width: 50%;
+  margin-left: 25%;
+  line-height: 60rpx;
+  text-align: center;
+  color: #666;
+  padding: 40rpx;
+}
+.toAdd {
+  width: 90%;
+  margin-top: 40rpx;
+  padding: 30rpx 0;
+  margin-left: 5%;
+  text-align: center;
+  border-radius: 12rpx;
+  background: #ffe400;
+}
+.namePhone {
+  display: flex;
+  color: #999;
+  justify-content: space-between;
+  padding-right: 80rpx;
+  padding-bottom: 20rpx;
+}
+.Edit {
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}

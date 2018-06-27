@@ -1,0 +1,46 @@
+page {
+  background: #f2f2f2;
+}
+.bottom {
+  padding-top: 80rpx;
+  width: 100%;
+  background: white;
+}
+.top {
+  text-align: center;
+}
+.border {
+  margin: 20rpx auto 40rpx;
+  width: 80rpx;
+  height: 10rpx;
+  border-radius: 12rpx;
+  background: #ddd;
+}
+.icon-more {
+  font-weight: bold;
+}
+.icon-time {
+  font-size: 32rpx;
+  color: #666;
+  padding: 20rpx 0 60rpx;
+}
+.icon-time text {
+  color: rgb(0,171,245);
+}
+
+.bot {
+  display: flex;
+}
+.bot>view {
+  width: 50%;
+  text-align: center;
+  padding: 26rpx 0;
+  border-top: 2rpx #f2f2f2 solid;
+}
+.apply {
+  background: #ffe400;
+}
+.wx-modal-btn-primary {
+  display: none;
+}
+

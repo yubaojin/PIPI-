@@ -1,0 +1,268 @@
+page {
+  background: #f2f2f2;
+}
+
+.head {
+  background: white;
+  padding: 0 40rpx;
+  margin-top: 12rpx;
+  line-height: 50rpx;
+}
+
+.address, .time, .restaurant {
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant {
+  margin-top: 10rpx;
+  padding: 20rpx 40rpx;
+  background: white;
+}
+
+.icon-map2:before {
+  font-size: 40rpx;
+  margin-right: 40rpx;
+}
+
+.name {
+  padding-left: 80rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.phone {
+  margin-left: 80rpx;
+}
+
+.time {
+  border-top: 2rpx #ddd solid;
+}
+
+.time .icon-time:before {
+  font-size: 40rpx;
+  margin-right: 40rpx;
+}
+
+.type, .proMessage {
+  background: white;
+  margin-top: 40rpx;
+}
+
+.type .title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  padding: 40rpx;
+}
+
+.title image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+.type1, .type2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 40rpx;
+}
+
+.type1 {
+  padding-top: 10rpx;
+  border-bottom: 2rpx #ddd solid;
+}
+
+.saomiao {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.block {
+  display: inline-block;
+  background: white;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 12rpx;
+  width: 84%;
+}
+
+.block .message>text {
+  padding: 40rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.cancel_ok {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cancel, .ok {
+  width: 50%;
+  text-align: center;
+  border-top: 2rpx solid #f2f2f2;
+  padding: 40rpx;
+}
+
+.ok {
+  border-left: 2rpx #f2f2f2 solid;
+  background: #000;
+  color: white;
+  border-radius: 0 0 12rpx 0;
+}
+
+.Title {
+  padding: 20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Title .title {
+  font-size: 36rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-phone {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.icon-phone:before {
+  color: #333;
+  font-size: 36rpx;
+  margin-right: 10rpx;
+}
+
+.list {
+  border-top: 2rpx #ddd solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 40rpx;
+}
+
+.list image {
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+}
+
+.listLeft {
+  display: flex;
+  align-items: center;
+}
+
+.message>text {
+  display: block;
+  line-height: 80rpx;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.listRight {
+  color: #999;
+}
+
+.orherPrice {
+  display: flex;
+  padding: 30rpx 40rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2rpx solid #ddd;
+}
+
+.smallBorder {
+  padding: 0 20rpx;
+}
+
+.smallBorder .orherPrice {
+  padding: 20rpx;
+}
+
+.orherPrice .icon-more:after {
+  margin-left: 20rpx;
+  color: #666;
+}
+
+.other {
+  margin-top: 20rpx;
+  width: 100%;
+  overflow: hidden;
+  background: white;
+}
+
+.other>view {
+  padding: 40rpx;
+}
+
+.other textarea {
+  border: 2rpx #f2f2f2 solid;
+  border-radius: 12rpx;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  height: 200rpx;
+  padding: 20rpx;
+}
+
+.submitOrder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 2rpx solid #ddd;
+  width: 100%;
+}
+
+.discount {
+  padding-left: 40rpx;
+}
+
+.price {
+  font-size: 40rpx;
+}
+
+.submit {
+  background: #ffe400;
+  width: 100px;
+  height: 35px;
+  margin-right: 0%;
+  text-align:center;
+  padding-top:30rpx 
+}
+
+.orderType {
+  padding: 30rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin-top: 20rpx;
+}
+
+.padding {
+  padding-bottom: 160rpx;
+}

@@ -1,0 +1,64 @@
+<view class="detailPic">
+  <image wx:if="{{disk.status==3}}" src="../../img/down.png"></image>
+  <image wx:elif="{{!disk.img}}" src="../../img/nopic.jpg"></image>
+  <image wx:else src="{{disk.img}}"></image>
+</view>
+<view class="messageBlock">
+  <view class="Message">
+    <view class="detailMessage">
+      <text class="name">{{disk.title}}</text>
+      <text class="monthsell">月售{{disk.sellnum}}</text>
+      <text class="price">¥{{disk.disPrice}} <text> ¥{{disk.price}}</text></text>
+    </view>
+  </view>
+  <view class="otherMessage">
+    <view class="S_M">
+      商品信息
+    </view>
+    <view>
+      {{disk.sellPoint}}
+    </view>
+  </view>
+</view>
+
+<!--评价  -->
+<view class="saySomething">
+  <view class="sayTitle">
+    <!-- 如果为空 设为100% -->
+    <text>外卖评价（好评率{{evals.ratio||'100%'}}）</text>
+
+    <text class="iconfont">{{evals.count > 0 ?'共'+evals.count+'条评价':'暂无评价'}}</text>
+
+  </view>
+  <block wx:for="{{evals.evals}}" wx:key="">
+    <view class="sayList">
+      <view class="sayLeft">
+        <!--头像-->
+        <image src="{{item.isAnoymous==1?'../../img/avatar.jpg':item.avatarUrl}}"></image>
+
+        <view class="Name">
+          <view class="name">{{item.isAnoymous==1?'匿名用户':item.nickname}}</view>
+          <view>
+            <!-- 评价值展示值 -->
+            <radio checked="true" disabled='true' color="red" wx:if="{{item.evalValue==1}}">差评</radio>
+            <radio checked="true" disabled='true' color="green" wx:if="{{item.evalValue==2}}">中评</radio>
+            <radio checked="true" disabled='true' color="yellow" wx:if="{{item.evalValue==3}}">好评</radio>
+          </view>
+          <!-- 评价内容 -->
+          <view>{{item.content}}</view>
+          <!-- 评论图片轮播 -->
+          <!-- 这里逻辑有点乱 需要细看 -->
+          <view class="Pic">
+            <block wx:for="{{item.imgs}}" wx:key="" wx:for-item="item2" wx:for-index="index2">
+              <image src="{{item2}}" bindtap="previewImage" data-current='{{item2}}' data-index='{{index}}'></image>
+            </block>
+          </view>
+
+        </view>
+      </view>
+      <view class="time">
+        {{item.created}}
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,53 @@
+<form bindsubmit="formSubmit">
+  <view class="people">
+    联系人
+  </view>
+  <view class="message">
+    <!-- 姓名   -->
+    <view class="height1">
+      <text>姓名</text>
+      <input name="name" placeholder="请填写收货人姓名" value="{{name}}" placeholder-style="font-size:28rpx;color:#999;" />
+    </view>
+    <!-- 性别 -->
+    <view class="height1">
+      <text>性别</text>
+      <view class="choose">
+        <radio-group name="gender">
+          <label>
+            <radio value="1" color="#ffe400" checked="{{gender==1?true:false}}" />先生</label>
+          <label>
+            <radio value="2" color="#ffe400" style='margin-left:50rpx;' checked="{{gender!=1?true:false}}" />女士</label>
+        </radio-group>
+      </view>
+    </view>
+    <!-- 手机 -->
+    <view class=" height1">
+      <text>手机</text>
+      <input name="mobile" placeholder="请填写收货人手机号码" value="{{mobile}}" type="number" placeholder-style="font-size:28rpx;color:#999;" />
+    </view>
+  </view>
+
+  <view class="people">
+    收货地址
+  </view>
+  <!-- 所在地区 -->
+  <view class="message2">
+    <view class="iconfont icon-more" bindtap="getAddress">
+      <text class="width" style='font-size:32rpx'>地区</text>
+      <view class="map">
+        <text class="iconfont icon-map"></text>
+        <input name="addr" class="width2" placeholder="请选择" placeholder-style="text-align:right;" disabled="true" value="{{addr}}" style='color:#999;' />
+      </view>
+    </view>
+    <!--详细地址-->
+    <view>
+      <text class="width" style='font-size:30rpx'>详细</text>
+      <input class="width2" name="detail" placeholder="例：四川理工汇南校区16号楼427室" value="{{detail}}" placeholder-style="font-size:28rpx;color:#999;" />
+    </view>
+  </view>
+  <view class='default' bindtap="changeDefault">
+    <text>设为默认地址</text>
+    <text class="{{isDefault==1? 'quan iconfont icon-true': 'quan'}}" style='position:relative;left:500rpx;'></text>
+  </view>
+  <button class="save" formType="submit">保存</button>
+</form>

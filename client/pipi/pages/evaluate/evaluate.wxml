@@ -1,0 +1,49 @@
+<view class="top">
+  <block wx:for="{{disks}}" wx:for-item="disk" wx:for-index="index" wx:key="">
+    <view class="Block">
+      <view class="food">
+        {{disk.title}}
+      </view>
+      <view class="textarea">
+        <textarea placeholder="默认好评哦！" data-index='{{index}}' bindinput="changeText" />
+      </view>
+      <!--选择照片-->
+      <view class="Pic">
+        <block wx:for="{{evals}}" wx:for-item="eval" wx:for-index="index2" wx:key="">
+          <block wx:if="{{index==index2}}">
+            <block wx:for="{{eval.imgs}}" wx:for-item="img" wx:for-index="index3" wx:key="">
+              <view class="PicBlock" bindtap="{{!img?'choosePic':''}}" data-eavlsIndex='{{index}}' data-imgsIndex='{{index3}}'>
+                <image src="{{img?img:'../../img/pic.png'}}"></image>
+                <view class="del" wx:if="{{img!=''}}" bindtap="del" data-eavlsIndex='{{index}}' data-imgsIndex='{{index3}}'>
+                  <text class="iconfont icon-del"></text>
+                </view>
+              </view>
+            </block>
+          </block>
+        </block>
+        <view class="small">(最多晒3张图片)</view>
+      </view>
+      <!--单选框按钮-->
+      <radio-group class="radio-group" data-index="{{index}}" bindchange="radioChange">
+        <label class="radio">
+          <radio value="1" color='red' />差评
+        </label>
+        <label class="radio">
+          <radio value="2" color='blue' />中评
+        </label>
+        <label class="radio">
+          <radio value="3" color='yellow' checked='true' />好评
+        </label>
+      </radio-group>
+    </view>
+  </block>
+</view>
+
+<view class="bottom">
+  <view class="{{isAnonymous==1?'iconfont icon-true active':'iconfont icon-true'}}" bindtap="changeAnonymous">
+    <text> 匿名晒单</text>
+  </view>
+  <view class="submit" bindtap="toSubmit">
+    提交
+  </view>
+</view>

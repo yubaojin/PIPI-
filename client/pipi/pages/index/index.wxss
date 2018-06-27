@@ -1,0 +1,742 @@
+/**index.wxss**/
+
+page {
+  background: #f2f2f2;
+  width: 100%;
+  height: 100%;
+}
+
+.active2 {
+  background: #333;
+  color: white;
+}
+
+.padding {
+  padding-bottom: 120rpx;
+}
+
+.selected {
+  background: white;
+  border-left: 8rpx solid #ffe400;
+}
+
+.P_active {
+  border-bottom: 4rpx solid #ffe400;
+}
+
+.bottomfixed {
+  background: white;
+}
+
+.page1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page1 .head {
+  background: #ffe400;
+  padding: 40rpx 40rpx 20rpx;
+  height: 20%;
+}
+
+.page1 .one, .two {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.page1 .saoma {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.page1 .address {
+  font-size: 32rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  max-width: 450rpx;
+  overflow: hidden;
+}
+
+.P_input {
+  position: relative;
+}
+
+.P_input input {
+  background: white;
+  border-radius: 40rpx;
+  width: 90%;
+  padding: 10rpx 0;
+  padding-left: 40rpx;
+  margin: 40rpx 0 5% 20rpx;
+}
+
+.P_input image {
+  position: absolute;
+  z-index: 999999;
+  width: 36rpx;
+  height: 36rpx;
+  padding: 6rpx 20rpx;
+  right: 20rpx;
+  top: 12rpx;
+}
+
+.swiper-item, .swiperList, swiper {
+  height: 60rpx;
+}
+
+.icon-news {
+  color: #ff5400;
+}
+
+.P_title {
+  display: flex;
+  padding: 0 10%;
+  height: 8%;
+  justify-content: space-between;
+  background: white;
+  font-size: 36rpx;
+}
+
+.P_order, .P_business {
+  width: 30%;
+  padding: 30rpx;
+  text-align: center;
+}
+
+.orderPage-sideBar {
+  width: 170rpx;
+  overflow: hidden;
+  font-size: 32rpx;
+}
+
+.P_order_P {
+  margin-top: 4rpx;
+}
+
+.orderPage-sideBar, orderPage-sideBar2 {
+  float: left;
+  height: 65%;
+  overflow: scroll;
+}
+
+.orderPage-sideBar2 {
+  width: 580rpx;
+}
+
+.menuList>view {
+  padding: 40rpx 0;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.menuList2 {
+  background: white;
+  padding: 30rpx 20rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.menuList2>.P_message {
+  text-align: left;
+  margin-left: 20rpx;
+  padding: 0;
+  border: 0;
+}
+
+.menuList2>view {
+  line-height: 44rpx;
+}
+
+.P_small {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.line_t {
+  text-decoration: line-through;
+  font-size: 28rpx;
+  color: #999;
+  margin-right: 10rpx;
+}
+
+.P_message .iconfont {
+  font-size: 40rpx;
+  color: #ffe400;
+  padding: 10rpx;
+}
+
+.P_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.S_top {
+  margin-top: 10rpx;
+  background: white;
+  padding: 20rpx 40rpx;
+}
+
+.S_title {
+  font-weight: bold;
+  border-bottom: 2rpx solid #ddd;
+  padding-bottom: 20rpx;
+}
+
+.S_top>.iconfont {
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.S_top>.iconfont:before {
+  margin-right: 20rpx;
+  font-size: 40rpx;
+}
+
+.S_top>.icon-zhekou:before {
+  color: #f74d4d;
+}
+
+.orderPage-sideBar2 image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.newUserPag image {
+  width: 100rpx;
+  height: 150rpx;
+  position: fixed;
+  bottom: 20%;
+  right: 40rpx;
+  z-index: 9999999;
+}
+
+.openPageBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999999;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.openPage {
+  width: 86%;
+  margin-top: 200rpx;
+  position: relative;
+}
+
+.Picbg {
+  width: 100%;
+  height: 600rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.openPage .btn {
+  position: absolute;
+  top: 400rpx;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 400rpx;
+  height: 80rpx;
+}
+
+.pageLeft, .pageRight {
+  position: absolute;
+  z-index: 999999;
+}
+
+.pageLeft .price {
+  font-size: 60rpx;
+}
+
+.smalltext {
+  font-size: 32rpx;
+}
+
+.pageLeft {
+  width: 140rpx;
+  line-height: 64rpx;
+  text-align: center;
+  top: 70rpx;
+  left: 50rpx;
+}
+
+.pageRight {
+  width: 400rpx;
+  line-height: 70rpx;
+  top: 70rpx;
+  left: 240rpx;
+}
+
+.Block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 99999999999;
+}
+
+.total {
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+}
+
+.title {
+  text-align: center;
+  padding: 40rpx 0;
+}
+
+.title .iconfont {
+  font-size: 50rpx;
+  float: right;
+  margin-right: 40rpx;
+}
+
+.type {
+  padding: 40rpx;
+}
+
+.chooseType {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 40rpx;
+}
+
+.chooseType>view {
+  text-align: center;
+  width: 30%;
+  border: 2rpx solid #333;
+  padding: 20rpx 0;
+  margin-bottom: 40rpx;
+}
+
+.num, .add2 {
+  padding: 0 40rpx 40rpx;
+}
+
+.ok {
+  padding: 40rpx;
+  text-align: center;
+  border-top: 2rpx solid #ddd;
+}
+
+.chooseNum {
+  font-size: 48rpx;
+  width: 100rpx;
+  text-align: center;
+  display: inline-block;
+}
+
+.add2 .iconfont {
+  font-size: 40rpx;
+  color: #ffe400;
+}
+
+/*buycar  */
+
+.page2 .main {
+  background: #f2f2f2 !important;
+  width: 100%;
+  height: 100%;
+}
+
+.page2 .icon-true {
+  color: #999;
+}
+
+.page2 .active {
+  color: #ffe400 !important;
+}
+
+.page2 .pro {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2rpx solid #f2f2f2;
+  padding: 20rpx 0;
+  font-size: 32rpx;
+}
+
+.page2 .pro>.icon-true {
+  color: #ddd;
+}
+
+.page2 .pro .iconfont {
+  font-size: 50rpx;
+  padding: 0 30rpx;
+  color: #666;
+}
+
+.page2 .pro .icon-true {
+  color: #ddd;
+}
+
+.page2 .pro:nth-child(1) {
+  margin-top: 10rpx;
+}
+
+.page2 .padding {
+  padding-bottom: 230rpx;
+}
+
+.page2 .pro image {
+  width: 240rpx;
+  height: 170rpx;
+}
+
+.page2 .settlement {
+  font-size: 32rpx;
+  position: fixed;
+  width: 100%;
+  bottom: 116rpx;
+  left: 0;
+  background: white;
+  border-top: 2rpx #ddd solid;
+}
+
+.page2 .tlement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page2 .tlement .iconfont {
+  font-size: 40rpx;
+}
+
+.page2 .message {
+  width: 400rpx;
+  margin-left: 20rpx;
+}
+
+.page2 .orderNum {
+  padding: 0 20rpx;
+}
+
+.page2 .message>view {
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderLeft {
+  display: flex;
+  align-items: center;
+}
+
+.otherMoney {
+  padding-top: 10rpx;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.page2 .buycar_icon {
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 50%;
+  background: #ffe400;
+  margin-left: 40rpx;
+}
+
+.page2 .buycar_num {
+  text-align: center;
+  line-height: 28rpx;
+  background: #f54949;
+  color: white;
+  border-radius: 50%;
+  width: 28rpx;
+  height: 28rpx;
+  font-size: 20rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+}
+
+.cart .buycar_num {
+  text-align: center;
+  line-height: 40rpx;
+  background: #f54949;
+  color: white;
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  font-size: 30rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 500rpx;
+}
+
+.page2 .totalMoney {
+  margin-left: 40rpx;
+}
+
+.page2 .toPay {
+  padding: 40rpx 80rpx;
+  background: #ffe400;
+}
+
+.numBorder {
+  display: inline-block;
+  border: 2rpx solid #ddd;
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 66rpx;
+}
+
+.numMiddle {
+  display: inline-block;
+  width: 70rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 66rpx;
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+}
+
+/*order  */
+
+.page3 .allOrder {
+  padding: 0 40rpx;
+}
+
+.page3 .allTitle {
+  display: flex;
+  justify-content: space-between;
+  background: #fafafa;
+  padding: 20rpx 40rpx;
+}
+
+.page3 .allTitle:nth-child(1) {
+  margin-top: 20rpx;
+}
+
+.page3 .allTitle .ing {
+  color: #399ce6;
+  font-size: 36rpx;
+}
+
+.page3 .allMessage {
+  margin-bottom: 40rpx;
+  background: white;
+  padding: 20rpx 0;
+}
+
+.page3 .allType {
+  display: flex;
+  line-height: 60rpx;
+  padding: 0 40rpx;
+  justify-content: space-between;
+}
+
+.page3 .allType text:nth-child(2) {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.page3 .allLast {
+  padding: 20rpx 0 10rpx;
+  clear: both;
+  border-top: 2rpx solid #f2f2f2;
+}
+
+.page3 button {
+  line-height: 2 !important;
+}
+
+.page3 .allLast {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.page3 .price {
+  font-size: 40rpx;
+}
+
+.page3 .allLast navigator {
+  color: #333;
+  width: 140rpx;
+  text-align: center;
+  display: inline-block;
+  border: 2rpx #ddd solid;
+  padding: 14rpx 10rpx;
+  border-radius: 6rpx;
+}
+
+.page3 .allLast .bg_y {
+  background: #ffe400;
+  border: 2rpx #ffe400 solid;
+  margin-left: 20rpx;
+}
+
+.page3 .orderOk {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.page3 .okMessage {
+  width: 90%;
+  background: white;
+  border-radius: 12rpx;
+  margin-left: 5%;
+  margin-top: 40%;
+  text-align: center;
+}
+
+.page3 .tip, .shouhuo {
+  padding: 80rpx 0 0;
+  text-align: center;
+}
+
+.shouhuo {
+  padding: 40rpx 0 80rpx;
+}
+
+.yesorno {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2rpx #ddd solid;
+}
+
+.okCancel, .okOk {
+  width: 50%;
+  padding: 30rpx 0;
+}
+
+.okOk {
+  border-left: 2rpx #ddd solid;
+  background: #333;
+  color: white;
+  border-radius: 0 0 12rpx 0;
+}
+
+.page3 .order_name {
+  display: inline-block;
+  width: 400rpx;
+}
+
+/*me  */
+
+.page4 .mePic {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe400;
+}
+
+.page4 .mePic image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+
+.page4 .mePag>view {
+  padding: 32rpx 40rpx;
+  background: white;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page4 .meMap {
+  border-top: 2rpx #f2f2f2 solid;
+}
+
+.page4 .mePag .meMore {
+  font-size: 44rpx;
+}
+
+.bottomfixed {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20rpx 0;
+  font-size: 32rpx;
+  color: #999;
+  height: 7%;
+  border-top: 2rpx #ddd solid;
+  background: white;
+}
+
+.bottomfixed>view {
+  width: 25%;
+  text-align: center;
+}
+
+.bottomfixed image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.page4 .calling {
+  margin-top: 60rpx;
+  text-align: center;
+  padding: 30rpx;
+  background: white;
+}
+
+.page4 .phoneColor {
+  color: rgb(40, 136, 252);
+}
+
+.addreducebtn {
+  position: absolute;
+  padding-left: 60px;
+}
+.bg_y {
+  color: #333;
+  width: 140rpx;
+  text-align: center;
+  display: inline-block;
+  border: 2rpx #ddd solid;
+  padding: 14rpx 10rpx;
+  border-radius: 6rpx;
+}
+
+.openShop {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+}

@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",     
+    "pages/addAddress/addAddress",
+    "pages/orderDetail/orderDetail",
+    "pages/refundDetail/refundDetail",
+    "pages/orderMap/orderMap",
+    "pages/detail/detail", 
+    "pages/editAddress/editAddress",
+    "pages/address/address",
+    "pages/submitOrder/submitOrder",
+    "pages/evaluate/evaluate"
+  ],
+  "window":{  
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "饭点时间",
+    "navigationBarTextStyle":"white"
+  }  
+}

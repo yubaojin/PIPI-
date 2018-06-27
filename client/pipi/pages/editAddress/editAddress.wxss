@@ -1,0 +1,221 @@
+page {
+  background: #f2f2f2;
+}
+
+.quan {
+  display: inline-block;
+  width: 42rpx !important;
+  height: 42rpx !important;
+  border: 2rpx #ddd solid;
+  border-radius: 50%;
+}
+
+.message .iconfont:before {
+  color: #ffe400;
+  font-size: 50rpx;
+  position: relative;
+  top: -8rpx;
+  left: -4rpx;
+}
+
+.people {
+  padding: 30rpx 40rpx;
+  font-weight: bold;
+}
+
+.message, .message2 {
+  line-height: 60rpx;
+  padding: 20rpx 40rpx;
+  background: white;
+}
+
+.message>view, .message2>view {
+  display: flex;
+  align-items: center;
+}
+
+.message2>view {
+  padding: 20rpx 0;
+}
+
+.message text {
+  display: inline-block;
+  width: 140rpx;
+}
+
+.choose {
+  display: flex;
+}
+
+.choose>view {
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.sir {
+  margin-right: 60rpx;
+}
+
+.icon-map2 {
+  font-size: 40rpx;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  width: 500rpx;
+}
+
+.save {
+  width: 90%;
+  background: #ffe400;
+  /* padding: 40rpx 0; */
+  margin-left: 5%;
+  margin-top: 100rpx;
+  text-align: center;
+  border-radius: 12rpx;
+}
+
+.header {
+  display: flex;
+  height: 60rpx;
+  font-size: 28rpx;
+  padding: 15rpx 20rpx;
+  line-height: 60rpx;
+  border-bottom: 20rpx solid #f4f4f4;
+}
+
+.header .search-input {
+  height: 60rpx;
+  flex: 1;
+  padding-left: 30rpx;
+  background: white;
+  border-radius: 10rpx;
+  color: #6d6d6d;
+}
+
+.page2 .header .search-btn {
+  text-align: center;
+  margin-left: 20rpx;
+  width: 100rpx;
+  background: #aaa;
+  border-radius: 10rpx;
+  color: #ebebeb;
+}
+
+.page2 .getLocation {
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-bottom: 20rpx solid #f4f4f4;
+}
+
+.page2 .addLocation {
+  position: relative;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 15rpx;
+}
+
+.page2 .addLocation-icon {
+  width: 30rpx;
+  line-height: 27rpx;
+  height: 30rpx;
+  text-align: center;
+  position: absolute;
+  right: 15rpx;
+  top: 20rpx;
+  border-radius: 30rpx;
+  color: #ffd671;
+  border: 2px solid #ffd671;
+}
+
+.page2 .myLocation {
+  background: #f4f4f4;
+  height: 100rpx;
+  padding-left: 15rpx;
+  line-height: 130rpx;
+  font-size: 25rpx;
+  color: #e3e3e3;
+}
+
+.page2 .result-container {
+  position: fixed;
+  top: 90rpx;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+}
+
+.page2 .search-result-list {
+  padding: 0 40rpx;
+  height: 100%;
+}
+
+.page2 .search-result {
+  line-height: 50rpx;
+  font-size: 28rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.page2 .search-result-desc {
+  line-height: 45rpx;
+  font-size: 27rpx;
+  color: #aaa;
+}
+
+.width {
+  width: 120rpx;
+  font-weight: bold;
+}
+
+.width2 {
+  font-size: 28rpx;
+  width: 450rpx;
+}
+
+.nothing {
+  padding-top: 40rpx;
+}
+
+.height1 {
+  padding: 5rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+}
+
+.height1 text {
+  font-weight: bold;
+}
+
+.quan {
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  border: 2rpx #ddd solid;
+  position: relative;
+  top: 8rpx;
+  border-radius: 50%;
+}
+
+.icon-true:before {
+  font-size: 50rpx;
+  position: relative;
+  color: #ffe400;
+  top: -4rpx;
+  left: -4rpx;
+}
+
+.default {
+  margin-top: 10rpx;
+  background: white;
+  font-weight: bold;
+  font-size: 30rpx;
+  padding: 20rpx
+}

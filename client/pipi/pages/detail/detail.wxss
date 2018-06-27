@@ -1,0 +1,307 @@
+page {
+  background: #f2f2f2;
+}
+
+.active {
+  background: #333;
+  color: white;
+}
+
+.detailPic image {
+  width: 100%;
+}
+
+.messageBlock {
+  padding: 20rpx 40rpx;
+  background: white;
+}
+
+.Message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+
+.addReduce {
+  display: flex;
+  align-items: center;
+}
+
+.addReduce .iconfont {
+  color: #ffe400;
+  font-size: 50rpx;
+}
+
+.orderNum {
+  padding: 0 20rpx;
+}
+
+.monthsell {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.detailMessage>text {
+  display: block;
+  line-height: 50rpx;
+}
+
+.name text {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.price text {
+  font-size: 28rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.otherMessage {
+  border-top: 2rpx #f2f2f2 solid;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  padding-top: 20rpx;
+}
+
+.S_M {
+  color: #999;
+}
+
+.saySomething {
+  margin-top: 20rpx;
+  background: white;
+  /* padding: 30rpx 0; */
+}
+
+.sayTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 40rpx;
+  font-weight: bold;
+  padding-bottom: 40rpx;
+}
+
+.sayTitle .iconfont {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.sayList {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20rpx 40rpx;
+  border-top: 2rpx #ddd solid;
+  
+}
+
+.sayList:last-child {
+  margin-bottom: 120rpx;
+}
+
+.sayLeft {
+  display: flex;
+}
+
+.sayLeft image {
+  margin-top: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.Name view {
+  line-height: 60rpx;
+}
+
+.Name .name {
+  color: #999;
+}
+
+.time {
+  font-size: 28rpx;
+  padding-top: 10rpx;
+  color: #999;
+}
+
+.addBuy {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  border-top: 2rpx #ddd solid;
+}
+
+.addBuy .add, .addBuy .buy {
+  background: white;
+  width: 50%;
+  color: #333;
+  padding: 40rpx 0;
+  text-align: center;
+}
+
+.addBuy .buy {
+  background: #000;
+  color: white;
+}
+
+.Block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.total {
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+}
+
+.title {
+  text-align: center;
+  padding: 40rpx 0;
+}
+
+.title .iconfont {
+  font-size: 50rpx;
+  float: right;
+  margin-right: 40rpx;
+}
+
+.type {
+  padding: 40rpx;
+}
+
+.chooseType {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 40rpx;
+}
+
+.chooseType>view {
+  text-align: center;
+  width: 30%;
+  border: 2rpx solid #333;
+  padding: 20rpx 0;
+  margin-bottom: 40rpx;
+}
+
+.num, .add2 {
+  padding: 0 40rpx 40rpx;
+}
+
+.ok {
+  padding: 40rpx;
+  text-align: center;
+  border-top: 2rpx solid #ddd;
+}
+
+.chooseNum {
+  font-size: 48rpx;
+  width: 100rpx;
+  text-align: center;
+  display: inline-block;
+}
+
+.iconfont {
+  font-size: 60rpx;
+}
+
+.settlement {
+  font-size: 32rpx;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: white;
+  border-top: 2rpx #ddd solid;
+}
+
+.tlement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tlement .iconfont {
+  font-size: 40rpx;
+}
+
+.message {
+  width: 400rpx;
+  margin-left: 20rpx;
+}
+
+.orderNum {
+  padding: 0 30rpx;
+}
+
+.message>view {
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderLeft {
+  display: flex;
+  align-items: center;
+}
+
+.otherMoney {
+  padding-top: 10rpx;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.buycar_icon {
+  position: relative;
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 50%;
+  background: #ffe400;
+  margin-left: 40rpx;
+}
+
+.buycar_num {
+  text-align: center;
+  line-height: 28rpx;
+  background: #f54949;
+  color: white;
+  border-radius: 50%;
+  width: 28rpx;
+  height: 28rpx;
+  font-size: 20rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+}
+
+.totalMoney {
+  margin-left: 20rpx;
+}
+
+.toPay {
+  padding: 40rpx 80rpx;
+  background: #ffe400;
+}
+
+.Pic image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 0;
+  border-radius: 0;
+}

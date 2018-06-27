@@ -1,0 +1,79 @@
+<view class="step">
+  <view class="title">
+    退款进度
+  </view>
+  <view class="steps">
+    <view class="stepBlock" wx:if="{{step>1}}">
+      <view class="quan {{step==2?'active':''}}"></view>
+      <view class="border"></view>
+      <text>退款成功</text>
+      <text class="small">2016-08-08 11:26</text>
+    </view>
+    <view class="stepBlock" wx:if="{{step>0}}">
+      <view class="quan {{step==1?'active':''}}"></view>
+      <view class="border"></view>
+      <text>卖家同意退款申请</text>
+      <text class="small">2016-08-08 11:26</text>
+    </view>
+    <view class="stepBlock">
+      <view class="quan {{step==0?'active':''}}"></view>
+      <text>提交退款申请</text>
+      <text class="small">2016-08-08 11:26</text>
+    </view>
+  </view>
+  <!-- <view class="stepList">
+    <view class="num">1</view>
+    <view>提交退款申请</view>
+    <view class="line"></view>
+  </view>
+  <view class="stepList">
+    <view class="num color">2</view>
+    <view class="color2">卖家同意退款申请</view>
+    <view class="line"></view>
+  </view>
+  <view class="stepList">
+    <view class="num color">3</view>
+    <view class="color2">退款成功</view>
+  </view> -->
+</view>
+
+<view class="detail">
+  <view class="title">退款详情</view>
+  <view class="otherDetail">
+    <text class="left">退款金额</text>
+    <text class="price">¥45</text>
+  </view>
+  <view class="otherDetail">
+    <text class="left">退款原因</text>
+    <text>送太慢了，不想要了</text>
+  </view>
+  <view class="otherDetail">
+    <text class="left">退回账户</text>
+    <text>微信支付</text>
+  </view>
+  <view class="otherDetail">
+    <text class="left">退款说明</text>
+    <textarea value="送太慢了，不想要了" disabled />
+    <image src="../../img/food.jpg"></image>
+  </view>  
+</view>
+<view class="bottom">
+  <view class="relevant">
+    <text class="title">相关订单</text>
+    <text class="iconfont icon-more"></text>
+  </view>
+  <view class="list">
+    <view class="listLeft">
+      <view class="foodPic">
+        <image src="../../img/food.jpg"></image>
+      </view>
+      <view class="message">
+        <text>黄焖鸡米饭</text>
+        <text class="price">¥12.43 </text>
+      </view>
+    </view>
+    <view class="listRight">
+      X1
+    </view>
+  </view>
+</view>

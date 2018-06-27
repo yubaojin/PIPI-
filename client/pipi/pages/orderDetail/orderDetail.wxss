@@ -1,0 +1,273 @@
+page {
+  background: #f2f2f2;
+}
+.orderType {
+  background: #ffe400;
+  text-align: center;
+  padding: 40rpx 0;
+}
+.icon-phone:before {
+  color: #ff6600;
+}
+.orderTop {
+  background: white;
+  margin-bottom: 20rpx;
+}
+.orderMessage {
+  background: white;
+}
+.Title {
+  padding: 20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-weight: bold;
+}
+.orderStatu {
+  color: #399ce6;
+  font-size: 32rpx;
+}
+.food {
+  padding: 0 40rpx;
+  border-top: 2rpx #ddd solid;
+}
+.list {
+  border-top: 2rpx #ddd solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0;
+}
+.list:first-child {
+  border-top: 0;
+}
+.list image{
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+}
+.listLeft {
+  display: flex;
+  align-items: center;
+}
+.message>text {
+  display: block;
+  line-height: 80rpx;
+}
+.oldPrice {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 28rpx;
+}
+.listRight {
+  margin-top: 20rpx;
+  color: #999;
+}
+.icon-pag {
+  color: #f53030;
+}
+.text {
+  color: #333;
+}
+.orherPrice {
+  display: flex;
+  padding: 30rpx 40rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2rpx solid #ddd;
+}
+.smallBorder {
+  padding: 0 20rpx;
+}
+.smallBorder .orherPrice {
+  padding: 20rpx;
+}
+.orherPrice .icon-more:after {
+  margin-left: 20rpx;
+  color: #666;
+}
+.lightcolor {
+  color: #999;
+  font-size: 32rpx;
+}
+.calling {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2rpx #ddd solid;
+  padding: 30rpx 40rpx;
+}
+.S_P {
+  display: flex;
+  align-items: center;
+}
+.calling image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.distributionMessage {
+  margin-top: 20rpx;
+  background: white;
+}
+.Title2 {
+  padding: 0 40rpx;
+  border-bottom: 2rpx #ddd solid;
+}
+.Title2 .title {
+  padding: 20rpx 0;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2rpx #ddd solid;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.name image {  
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.Pic {
+  display: flex;
+  align-items: center;
+}
+.messages {
+  display: flex;
+  padding: 20rpx 40rpx;
+}
+.time {
+  width: 200rpx;
+  color: #999;
+}
+.bottom1 {
+  margin-top: 20rpx;
+  background: white;
+  padding: 40rpx 0;
+  overflow: hidden;
+}
+.btn {
+  border: 2rpx #ddd solid;
+  border-radius: 36rpx;
+  font-size: 32rpx;
+  float: right;
+  padding: 14rpx 26rpx;
+  margin-right: 40rpx;
+}
+
+.logistics {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  background: rgba(0,0,0,.2);
+}
+.Block {
+  position: absolute;
+  top: 100rpx;
+  left: 0;
+  background: white;
+  width: 92%;
+  margin-left: 4%;
+  border-radius: 24rpx;
+}
+.orderTitle {
+  text-align: center;
+  padding: 40rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.detailList {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx;
+  position: relative;
+  padding-right: 80rpx;
+}
+.fistList {
+  padding-top: 80rpx;
+}
+.detailList:before {
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  background: #ddd;
+  border-radius: 50%;
+  position: relative;
+  top: 14rpx;
+  left: 76rpx;
+  z-index: 9;
+}
+.borderLeft {
+  height: 120rpx;
+  width: 2rpx;
+  background: #999;
+  position: absolute;
+  left: 124rpx;
+  top: 64rpx;
+  
+}
+.detailList:before:first-of-type {
+  width: 0;
+}
+.ordorDetail:last-of-type .borderLeft {
+  height: 0;
+}
+.ordorDetail:first-of-type .detailList:before {
+  content: '';
+  width: 0;
+  height: 0;
+}
+.ordorDetail .iconfont {
+  position: absolute;
+  width: 38rpx;
+  height: 38rpx;
+  top: 38rpx;
+  color: #ffe400;
+  left: 104rpx;
+  z-index: 9;
+}
+.noPay {
+  padding: 20rpx 0 40rpx;
+}
+
+.Map .bottom {
+  padding-top: 60rpx;
+  width: 100%;
+  background: white;
+}
+.Map .top {
+  text-align: center;
+}
+.Map .icon-more {
+  font-weight: bold;
+}
+.Map .icon-time {
+  font-size: 32rpx;
+  color: #666;
+  padding: 20rpx 0 60rpx;
+}
+.Map .icon-time text {
+  color: rgb(0,171,245);
+}
+
+.Map .bot {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.Map .bot>view {
+  width: 50%;
+  text-align: center;
+  padding: 26rpx 0;
+  border-top: 2rpx #f2f2f2 solid;
+}
+.Map .apply {
+  background: #ffe400;
+}
+.Map .wx-modal-btn-primary {
+  display: none;
+}

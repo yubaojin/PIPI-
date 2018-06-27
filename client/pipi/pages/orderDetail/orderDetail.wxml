@@ -1,0 +1,220 @@
+<!-- <view class="orderType" wx:if="{{order.status==3}}">
+  订单已完成
+</view> -->
+<view class="Map">
+  <view class="bottom">
+    <view class="top">
+      <block wx:if="{{order.status==1}}">
+        <view style='margin-bottom:50rpx;font-size:45rpx;'>等待支付！</view>
+        <view class="noPay" style='margin-bottom:50rpx;'>
+          逾期未支付，订单将自动取消
+        </view>
+      </block>
+      <block wx:if="{{order.status==2}}">
+        <view style='margin-bottom:50rpx;font-size:45rpx'>用户已付款，等商家接单！</view>
+        <view class="noPay" style='margin-bottom:50rpx;'>
+          逾期未接单，订单将自动取消
+        </view>
+      </block>
+      <block wx:if="{{order.status==3}}">
+        <view style='margin-bottom:50rpx;font-size:45rpx;'>商家已接单！</view>
+        <view class="noPay" style='margin-bottom:50rpx;'>
+          商家正在努力备货中！
+        </view>
+      </block>
+      <block wx:if="{{order.status==4}}">
+        <view style='margin-bottom:50rpx;font-size:45rpx;'>商家已发货！</view>
+        <view class="noPay" style='margin-bottom:50rpx;'>
+          你的外卖正在路上！
+        </view>
+      </block>
+      <block wx:if="{{order.status==5}}">
+        <view style='margin-bottom:50rpx;font-size:45rpx;'>交易完成   ！</view>
+        <view class="noPay" style='margin-bottom:50rpx;'>
+          愉快的合作！
+        </view>
+      </block>
+      <block wx:if="{{order.status==7}}">
+        <view style='margin-bottom:50rpx;font-size:45rpx;'>订单已取消！</view>
+        <view class="noPay" style='margin-bottom:50rpx;'>
+          订单超时未付款已取消！
+        </view>
+      </block>
+      <block wx:if="{{order.status==8}}">
+        <view style='margin-bottom:50rpx;font-size:45rpx;'>订单已取消！</view>
+        <view class="noPay" style='margin-bottom:50rpx;'>
+          商家取消订单！
+        </view>
+      </block>
+    </view>
+    <!--支付后显出  -->
+    <!-- <view class="bot" wx:if="{{order.status==2||order.status==3||order.status==4}}">
+      <view bindtap="modalinput" bindtap="calling">催单</view>
+      <view class="apply" bindtap="apply" bindtap="toApply">申请退款</view>
+    </view> -->
+    <!-- 未支付时显出 -->
+    <!-- <view class="bot" wx:if="{{order.status==1}}">
+      <view bindtap="modalinput" bindtap="calling">取消订单</view>
+      <view class="apply" bindtap="orderPay" data-orderid='{{order.orderId}}'>去支付（还剩10分55秒）</view>
+    </view> -->
+  </view>
+</view>
+
+
+<view class="orderMessage">
+  <view class="Title">
+    <text class="title">订单详情</text>
+  </view>
+  <view class="calling" bindtap="calling">
+    <view class="S_P">
+      <image src="{{business.avatarUrl}}"></image>
+      <text>{{business.name}}</text>
+    </view>
+    <view class="iconfont icon-phone">
+      联系商家
+    </view>
+  </view>
+
+  <!--食物展示界面 -->
+  <view class="food">
+    <block wx:for="{{order.items}}" wx:key="">
+      <view class="list">
+        <view class="listLeft">
+          <view class="foodPic">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="message">
+            <text>{{item.title}}</text>
+            <text class="price">¥{{item.disPrice}} <text class="oldPrice">¥{{item.price}}</text></text>
+          </view>
+        </view>
+        <view class="listRight">
+          X{{item.num}}
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="smallBorder">
+    <view class="orherPrice">
+      <text>就餐方式</text>
+      <text>外卖</text>
+    </view>
+  </view>
+  <view class="orherPrice">
+    <text class="lightcolor">共{{order.totalMoney}}元</text>
+    <text>实付{{order.totalMoney}}元</text>
+  </view>
+</view>
+
+<view class="distributionMessage">
+  <view class="Title2">
+    <view class="title">配送信息</view>
+  </view>
+  <view class="messages">
+    <view class="time">期望时间</view>
+    <view class="type">立即配送</view>
+  </view>
+  <view class="messages">
+    <view class="time">配送地址</view>
+    <view class="type">
+      <view>{{order.orderAddr.name}}({{order.orderAddr.gender==1?'先生':'女士'}}）{{order.orderAddr.mobile}}</view>
+      <view>{{order.orderAddr.address}}</view>
+    </view>
+  </view>
+  <view class="messages">
+    <view class="time">配送服务</view>
+    <view class="type">由商家提供配送服务</view>
+  </view>
+</view>
+
+<view class="distributionMessage ">
+  <view class="Title2">
+    <view class="title">订单信息</view>
+  </view>
+  <view class="messages">
+    <view class="time">订单号码</view>
+    <view class="type">{{order.orderId}}</view>
+  </view>
+  <view class="messages">
+    <view class="time">订单时间</view>
+    <view class="type">{{order.createTime}}</view>
+  </view>
+  <view class="messages">
+    <view class="time">支付方式</view>
+    <block wx:if="{{order.status==1||order.status==7}}">
+      <view class="type">未支付</view>
+    </block>
+    <block wx:else>
+      <view class="type">在线支付</view>
+    </block>
+  </view>
+  <view class="messages">
+    <view class="time">订单备注</view>
+    <view class="type">{{order.remarks?order.remarks:"无"}}</view>
+  </view>
+</view>
+
+<!--订单完成时才有  -->
+<!-- <view class="bottom1" wx:if="{{order.status==3}}">
+  <view class="btn">
+    再来一单
+  </view>
+  <view class="btn" bindtap="toEvaluate">
+    立即评价
+  </view>
+  <view class="btn" bindtap="logToTrue">
+    订单物流
+  </view>
+</view> -->
+
+<!--订单跟踪  -->
+<!-- <view class="logistics" wx:if="{{logistics}}" bindtap="logToFalse">
+  <view class="Block">
+    <view class="orderTitle">订单跟踪</view>
+    <view class="ordorDetail">
+      <view class="detailList"> -->
+<!-- <view class="iconfont icon-true"></view> -->
+<!-- <image src="../../img/yes.png" class="iconfont"></image>
+        <view class="borderLeft"></view>
+        <text>订单已完成</text>
+        <text>5月26日 12:13</text>
+      </view>
+    </view>
+    <view class="ordorDetail">
+      <view class="detailList">
+        <view class="borderLeft"></view>
+        <text>商品已送达</text>
+        <text>5月26日 12:13</text>
+      </view>
+    </view>
+    <view class="ordorDetail">
+      <view class="detailList">
+        <view class="borderLeft"></view>
+        <text>骑手已接单</text>
+        <text>5月26日 12:13</text>
+      </view>
+    </view>
+    <view class="ordorDetail">
+      <view class="detailList">
+        <view class="borderLeft"></view>
+        <text>商家已接单</text>
+        <text>5月26日 12:13</text>
+      </view>
+    </view>
+    <view class="ordorDetail">
+      <view class="detailList">
+        <view class="borderLeft"></view>
+        <text>支付成功</text>
+        <text>5月26日 12:13</text>
+      </view>
+    </view>
+    <view class="ordorDetail">
+      <view class="detailList">
+        <view class="borderLeft"></view>
+        <text>订单已提交</text>
+        <text>5月26日 12:13</text>
+      </view>
+    </view>
+  </view>
+</view> -->
