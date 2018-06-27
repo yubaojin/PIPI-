@@ -18,3 +18,8 @@
 ![alt text]( /img/8.png "Title")
 ![alt text]( /img/9.png "Title")
 
+## 说明
+
+<p>
+  后台登录账号是root 密码也是root
+</p>
