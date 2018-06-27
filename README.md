@@ -26,4 +26,5 @@
 
 <p>
   client/pipi文件是小程序文件 配置在服务器的端口是在根目录下app.js中的globalData中的host和port变量
+  数据库SQL脚本在server/pipi中的sql文件中
 </p>
