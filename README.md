@@ -5,4 +5,4 @@
 
 ## 展示图如下：
 
-[id]: /path/to/img.jpg
+[id]: /pic/1.png
