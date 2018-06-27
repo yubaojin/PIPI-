@@ -1,0 +1,5 @@
+2018-06-02 11:12:14,012 [http-nio-8080-exec-5] ERROR c.p.exception.GlobalExceptionHandler 29 - redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+2018-06-02 11:12:23,943 [http-nio-8080-exec-10] ERROR c.p.exception.GlobalExceptionHandler 29 - redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+2018-06-02 11:12:34,013 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+2018-06-02 14:18:32,410 [http-nio-8080-exec-7] ERROR c.p.exception.GlobalExceptionHandler 29 - redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+2018-06-02 14:24:44,103 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect

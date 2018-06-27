@@ -1,0 +1,4 @@
+2018-06-27 16:48:36,679 [http-nio-8080-exec-3] ERROR c.p.exception.GlobalExceptionHandler 29 - com.pipi.exception.ImageException: 图片上传失败
+2018-06-27 16:49:03,082 [http-nio-8080-exec-4] ERROR c.p.exception.GlobalExceptionHandler 29 - com.pipi.exception.ImageException: 图片上传失败
+2018-06-27 16:57:30,130 [http-nio-8080-exec-10] ERROR c.p.exception.GlobalExceptionHandler 29 - com.pipi.exception.ImageException: 图片上传失败
+2018-06-27 16:58:02,084 [http-nio-8080-exec-2] ERROR c.p.exception.GlobalExceptionHandler 29 - com.pipi.exception.ImageException: 图片上传失败

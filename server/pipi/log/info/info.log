@@ -1,0 +1,3 @@
+2018-06-27 16:41:30,965 [restartedMain] INFO  com.pipi.Main 48 - Starting Main on 7KPV3GGKFPEQ1JA with PID 10520 (D:\Java\Eclipse\wycs\pipi\target\classes started by Administrator in D:\Java\Eclipse\wycs\pipi)
+2018-06-27 16:41:30,976 [restartedMain] INFO  com.pipi.Main 597 - The following profiles are active: dev
+2018-06-27 16:41:40,230 [restartedMain] INFO  com.pipi.Main 57 - Started Main in 9.831 seconds (JVM running for 10.399)

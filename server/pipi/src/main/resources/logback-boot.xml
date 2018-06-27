@@ -1,0 +1,87 @@
+<configuration>
+	<!-- %m输出的信息,%p日志级别,%t线程名,%d日期,%c类的全名,%i索引【从数字0开始递增】,,, -->
+	<!-- appender是configuration的子节点，是负责写日志的组件。 -->
+	<!-- ConsoleAppender：把日志输出到控制台 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d %p (%file:%line\)- %m%n</pattern>
+			<!-- 控制台也要使用UTF-8，不要使用GBK，否则会中文乱码 -->
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	<!-- RollingFileAppender：滚动记录文件，先将日志记录到指定文件，当符合某个条件时，将日志记录到其他文件 -->
+	<!-- 以下的大概意思是：1.先按日期存日志，日期变了，将前一天的日志文件名重命名为XXX%日期%索引，新的日志仍然是sys.log -->
+	<!-- 2.如果日期没有发生变化，但是当前日志的文件大小超过1KB时，对当前日志进行分割 重命名 -->
+	<appender name="fileInfoLog"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!--如果只是想要 Info 级别的日志，只是过滤 info 还是会输出 Error 日志，因为 Error 的级别高， 所以我们使用下面的策略，可以避免输出 
+			Error 的日志 -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<!--过滤 Error -->
+			<level>ERROR</level>
+			<!--匹配到就禁止 -->
+			<onMatch>DENY</onMatch>
+			<!--没有匹配到就允许 -->
+			<onMismatch>ACCEPT</onMismatch>
+		</filter>
+		<!--日志名称，如果没有File 属性，那么只会使用FileNamePattern的文件路径规则 如果同时有<File>和<FileNamePattern>，那么当天日志是<File>，明天会自动把今天 
+			的日志改名为今天的日期。即，<File> 的日志都是当天的。 -->
+		<File>log/info/info.log</File>
+		<!--滚动策略，按照时间滚动 TimeBasedRollingPolicy -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!--文件路径,定义了日志的切分方式——把每一天的日志归档到一个文件中,以防止日志填满整个磁盘空间 -->
+			<FileNamePattern>log/info/info.%d{yyyy-MM-dd}.log
+			</FileNamePattern>
+			<!--只保留最近90天的日志 -->
+			<maxHistory>10</maxHistory>
+			<!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志 -->
+			<!--<totalSizeCap>1GB</totalSizeCap> -->
+		</rollingPolicy>
+		<!--日志输出编码格式化 -->
+		<encoder>
+			<charset>UTF-8</charset>
+			<pattern>%d [%thread] %-5level %logger{36} %line - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="fileErrorLog"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!--如果只是想要 Error 级别的日志，那么需要过滤一下，默认是 info 级别的，ThresholdFilter -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>Error</level>
+		</filter>
+		<!--日志名称，如果没有File 属性，那么只会使用FileNamePattern的文件路径规则 如果同时有<File>和<FileNamePattern>，那么当天日志是<File>，明天会自动把今天 
+			的日志改名为今天的日期。即，<File> 的日志都是当天的。 -->
+		<File>log/error/error.log</File>
+		<!--滚动策略，按照时间滚动 TimeBasedRollingPolicy -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!--文件路径,定义了日志的切分方式——把每一天的日志归档到一个文件中,以防止日志填满整个磁盘空间 -->
+			<FileNamePattern>log/error/error.%d{yyyy-MM-dd}.log
+			</FileNamePattern>
+			<!--只保留最近30天的日志 -->
+			<maxHistory>30</maxHistory>
+			<!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志 -->
+			<!--<totalSizeCap>1GB</totalSizeCap> -->
+		</rollingPolicy>
+		<!--日志输出编码格式化 -->
+		<encoder>
+			<charset>UTF-8</charset>
+			<pattern>%d [%thread] %-5level %logger{36} %line - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- 控制台输出日志级别 -->
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+	<!-- 指定项目中某个包，当有日志操作行为时的日志记录级别 -->
+	<!-- com.appley为根包，也就是只要是发生在这个根包下面的所有日志操作行为的权限都是DEBUG -->
+	<!-- 级别依次为【从高到低】：FATAL > ERROR > WARN > INFO > DEBUG > TRACE -->
+	<logger name="com.pipi" level="ERROR">
+		<appender-ref ref="fileErrorLog" />
+	</logger>
+	<logger name="com.pipi" level="INFO">
+		<appender-ref ref="fileInfoLog" />
+	</logger>
+</configuration>

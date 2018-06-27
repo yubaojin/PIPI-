@@ -1,0 +1,26 @@
+2018-06-13 12:54:55,930 [http-nio-8080-exec-4] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:55:05,301 [http-nio-8080-exec-2] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:55:26,789 [http-nio-8080-exec-5] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:55:27,516 [http-nio-8080-exec-6] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:55:27,911 [http-nio-8080-exec-7] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:55:28,231 [http-nio-8080-exec-3] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:55:28,499 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:55:29,031 [http-nio-8080-exec-8] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:57:10,290 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:57:11,360 [http-nio-8080-exec-2] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:57:11,994 [http-nio-8080-exec-3] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 12:58:33,429 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+2018-06-13 12:59:44,413 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+2018-06-13 12:59:45,580 [http-nio-8080-exec-2] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+2018-06-13 13:01:51,976 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+2018-06-13 13:03:51,706 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+2018-06-13 13:10:28,989 [http-nio-8080-exec-4] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.expression.spel.SpelParseException: EL1041E: After parsing a valid expression, there is still more data in the expression: 'colon(:)'
+2018-06-13 13:33:27,337 [http-nio-8080-exec-10] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+2018-06-13 13:34:28,106 [http-nio-8080-exec-1] ERROR c.p.exception.GlobalExceptionHandler 29 - org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The method getDiskById(int) in the type DiskService is not applicable for the arguments (String)
+
+2018-06-13 13:36:20,948 [http-nio-8080-exec-3] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.util.ArrayList cannot be cast to com.pipi.entity.Result
+2018-06-13 14:17:14,719 [http-nio-8080-exec-8] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.util.ArrayList cannot be cast to com.pipi.entity.Result
+2018-06-13 14:53:30,042 [http-nio-8080-exec-2] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.util.ArrayList cannot be cast to com.pipi.entity.Result
+2018-06-13 14:56:29,821 [http-nio-8080-exec-4] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.util.ArrayList cannot be cast to com.pipi.entity.Result
+2018-06-13 14:58:30,512 [http-nio-8080-exec-2] ERROR c.p.exception.GlobalExceptionHandler 29 - java.lang.ClassCastException: java.util.ArrayList cannot be cast to com.pipi.entity.Result
