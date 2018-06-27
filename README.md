@@ -23,3 +23,7 @@
 <p>
   后台登录账号是root 密码也是root
 </p>
+
+<p>
+  client/pipi文件是小程序文件 配置在服务器的端口是在根目录下app.js中的globalData中的host和port变量
+</p>
